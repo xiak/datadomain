@@ -10,7 +10,7 @@
 - Data movement to cloud
   ddcli -host 10.98.xx.xx -user sysadmin -password changeme -x=4
 - Avamar GC
-  ddcli -host 10.98.xx.xx -user admin -password Chang3M3Now. -x=5
+  ddcli -host 10.98.xx.xx -user admin -password changeme -x=5
 
 ## Usage
 ```bash
@@ -39,7 +39,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=0
 ```
-![](http://cncdta.ccoe.lab.emc.com:10080/Xiak/remote-command/raw/145482f8bd641cd03259b5dbdd78174cc2af61ba/src/filesys-clean.PNG)
+![](http://github.com/xiak/datadomain/raw/master/src/filesys-clean.PNG)
 
 ### Data domain restart ddboost 
 Include those dd commands:
@@ -49,7 +49,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=1
 ```
-![](http://cncdta.ccoe.lab.emc.com:10080/Xiak/remote-command/raw/145482f8bd641cd03259b5dbdd78174cc2af61ba/src/ddboost-restart.PNG)
+![](http://github.com/xiak/datadomain/raw/master/src/ddboost-restart.PNG)
 
 ### Data domain delete all storage unit
 Include those dd commands:
@@ -59,7 +59,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=2
 ```
-![](http://cncdta.ccoe.lab.emc.com:10080/Xiak/remote-command/raw/145482f8bd641cd03259b5dbdd78174cc2af61ba/src/delete-all-storage-unit.PNG)
+![](http://github.com/xiak/datadomain/raw/master/src/delete-all-storage-unit.PNG)
 
 ### Data domain delete oldest storage unit
 Include those dd commands:
@@ -69,7 +69,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=3
 ```
-![](http://cncdta.ccoe.lab.emc.com:10080/Xiak/remote-command/raw/145482f8bd641cd03259b5dbdd78174cc2af61ba/src/delete-oldest-storage-unit.PNG)
+![](http://github.com/xiak/datadomain/raw/master/src/delete-oldest-storage-unit.PNG)
 
 ### Data domain datamovement to cloud
 Include those dd commands:
@@ -92,7 +92,7 @@ ddcli -host=<remote server host> -user=<remote server user name> -password=<remo
 ```
 ## Develop from master
 If you want to build a package yourself, or contribute. Here is a guide for how to do that. You can always find
-the latest master builds [here](http://cncdta.ccoe.lab.emc.com:10080/Xiak/ddcli)
+the latest master builds [here](http://github.com/xiak/datadomain/bin/ddcli)
 
 ### Dependencies
 - Go 1.8.1
