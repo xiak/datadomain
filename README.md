@@ -39,7 +39,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=0
 ```
-![T](datadomain/src/filesys-clean.PNG)
+![T](https://github.com/xiak/datadomain/blob/master/src/filesys-clean.PNG?raw=true)
 
 ### Data domain restart ddboost 
 Include those dd commands:
