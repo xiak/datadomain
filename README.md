@@ -39,7 +39,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=0
 ```
-![](http://github.com/xiak/datadomain/raw/master/src/filesys-clean.PNG)
+![T](http://github.com/xiak/datadomain/raw/master/src/filesys-clean.PNG)
 
 ### Data domain restart ddboost 
 Include those dd commands:
@@ -49,7 +49,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=1
 ```
-![](http://github.com/xiak/datadomain/raw/master/src/ddboost-restart.PNG)
+![T](http://github.com/xiak/datadomain/raw/master/src/ddboost-restart.PNG)
 
 ### Data domain delete all storage unit
 Include those dd commands:
@@ -59,7 +59,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=2
 ```
-![](http://github.com/xiak/datadomain/raw/master/src/delete-all-storage-unit.PNG)
+![T](http://github.com/xiak/datadomain/raw/master/src/delete-all-storage-unit.PNG)
 
 ### Data domain delete oldest storage unit
 Include those dd commands:
@@ -69,7 +69,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=3
 ```
-![](http://github.com/xiak/datadomain/raw/master/src/delete-oldest-storage-unit.PNG)
+![T](http://github.com/xiak/datadomain/raw/master/src/delete-oldest-storage-unit.PNG)
 
 ### Data domain datamovement to cloud
 Include those dd commands:
@@ -92,14 +92,14 @@ ddcli -host=<remote server host> -user=<remote server user name> -password=<remo
 ```
 ## Develop from master
 If you want to build a package yourself, or contribute. Here is a guide for how to do that. You can always find
-the latest master builds [here](http://github.com/xiak/datadomain/bin/ddcli)
+the latest master builds [here](http://github.com/xiak/datadomain/bin/)
 
 ### Dependencies
 - Go 1.8.1
 
 ### Building
 ```bash
-git clone http://cncdta.ccoe.lab.emc.com:10080/Xiak/ddcli.git
+git clone http://github.com/xiak/datadomain.git
 go run build.go setup
 go run build.go build
 ```
