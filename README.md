@@ -49,7 +49,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=1
 ```
-![T](http://github.com/xiak/datadomain/raw/master/src/ddboost-restart.PNG)
+![T](https://github.com/xiak/datadomain/blob/master/src/ddboost-restart.PNG?raw=true)
 
 ### Data domain delete all storage unit
 Include those dd commands:
@@ -59,7 +59,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=2
 ```
-![T](http://github.com/xiak/datadomain/raw/master/src/delete-all-storage-unit.PNG)
+![T](https://github.com/xiak/datadomain/blob/master/src/delete-all-storage-unit.PNG?raw=true)
 
 ### Data domain delete oldest storage unit
 Include those dd commands:
@@ -69,7 +69,7 @@ Include those dd commands:
 ```bash
 ddcli -host=<remote server host> -user=<remote server user name> -password=<remote server password> -x=3
 ```
-![T](http://github.com/xiak/datadomain/raw/master/src/delete-oldest-storage-unit.PNG)
+![T](https://github.com/xiak/datadomain/blob/master/src/delete-oldest-storage-unit.PNG?raw=true)
 
 ### Data domain datamovement to cloud
 Include those dd commands:
