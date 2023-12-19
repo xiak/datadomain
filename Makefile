@@ -1,3 +1,8 @@
+.PHONY: init
+# init environment
+init:
+	go mod tidy
+
 .PHONY: build-linux
 # build linux binary
 build-linux:
@@ -16,6 +21,7 @@ build-windows:
 .PHONY: build-all
 # build all
 build-all:
+	make init
 	make build-linux;
 	make build-darwin;
 	make build-windows;
