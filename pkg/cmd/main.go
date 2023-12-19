@@ -22,7 +22,7 @@ var fn = []string{
 func fns(fn *[]string) *string {
 	var temp string
 	for key, value := range *fn {
-		temp = fmt.Sprintf("%s%d: %s\n\t", temp, key, value)
+		temp = fmt.Sprintf("%s%d: %s\n", temp, key, value)
 	}
 	return &temp
 }
