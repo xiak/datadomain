@@ -111,6 +111,15 @@ chmod a+x bin/ddcli
 ./bin/ddcli
 ```
 
+### Github build and release with a tag
+
+The repo will be built and released when you push a tag (format reg: '[0-9]+.[0-9]+.[0-9]+') to github.com
+
+```shell
+git tag -a 0.0.1 -m '0.0.1 release'
+git push origin 0.0.1
+```
+
 ## Contribute
 If you have any idea for an improvement or found a bug do not hesitate to open an issue.
 And if you have time clone this repo and submit a pull request and help me make Diablo
