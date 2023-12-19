@@ -95,13 +95,20 @@ If you want to build a package yourself, or contribute. Here is a guide for how 
 the latest master builds [here](http://github.com/xiak/datadomain/bin/)
 
 ### Dependencies
-- Go 1.8.1
+- Go 1.21.5
 
 ### Building
-```bash
+```shell
 git clone http://github.com/xiak/datadomain.git
-go run build.go setup
-go run build.go build
+
+# windows
+go build -o bin\ddcli.exe pkg\cmd\main.go
+.\bin\ddcli.exe
+
+# linux
+go build -o bin/ddcli pkg/cmd/main.go
+chmod a+x bin/ddcli
+./bin/ddcli
 ```
 
 ## Contribute
@@ -110,4 +117,4 @@ And if you have time clone this repo and submit a pull request and help me make 
 better that is all we dream about it!
 
 ## License
-ddcli is distributed under Apache 2.0 License.
+ddcli is distributed under MIT License.

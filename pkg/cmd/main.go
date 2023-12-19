@@ -1,16 +1,16 @@
 package main
 
 import (
-	"os"
-	"fmt"
+	s "datadomain/pkg/services"
 	"flag"
-	s "github.com/xiak/remote-command/pkg/services"
+	"fmt"
+	"os"
 )
 
 var version = "0.0.1"
 var commit = "Xiak"
 
-var fn = []string {
+var fn = []string{
 	"Data domain file system GC",
 	"Data domain restart ddboost",
 	"Data domain delete all storage unit",
@@ -19,7 +19,7 @@ var fn = []string {
 	"Avamar GC",
 }
 
-func fns (fn *[]string) *string {
+func fns(fn *[]string) *string {
 	var temp string
 	for key, value := range *fn {
 		temp = fmt.Sprintf("%s%d: %s\n\t", temp, key, value)

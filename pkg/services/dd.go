@@ -1,23 +1,23 @@
 package services
 
 import (
+	"datadomain/pkg/parser"
 	"fmt"
-	"github.com/xiak/remote-command/pkg/parser"
 )
 
 type DataDomain struct {
-	cmd *Command
+	cmd    *Command
 	prefix string
 }
 
 func NewDataDomain(cmd *Command) *DataDomain {
 	return &DataDomain{
-		cmd: cmd,
+		cmd:    cmd,
 		prefix: "[Response]:",
 	}
 }
 
-func (d *DataDomain) FilesysGc() (error) {
+func (d *DataDomain) FilesysGc() error {
 	output, err := d.cmd.Run("filesys clean start")
 	fmt.Println(d.prefix, output)
 	if err != nil {
@@ -33,7 +33,7 @@ func (d *DataDomain) FilesysGc() (error) {
 	return nil
 }
 
-func (d *DataDomain) DataMoveToCloud() (error) {
+func (d *DataDomain) DataMoveToCloud() error {
 	output, err := d.cmd.Run("data-movement start to-tier cloud")
 	fmt.Println(d.prefix, output)
 	if err != nil {
@@ -49,7 +49,7 @@ func (d *DataDomain) DataMoveToCloud() (error) {
 	return nil
 }
 
-func (d *DataDomain) DDBoostRestart() (error) {
+func (d *DataDomain) DDBoostRestart() error {
 	output, err := d.cmd.Run("ddboost disable")
 	fmt.Println(d.prefix, output)
 	if err != nil {
@@ -65,7 +65,7 @@ func (d *DataDomain) DDBoostRestart() (error) {
 	return nil
 }
 
-func (d *DataDomain) DeleteAllStorageUnit() (error) {
+func (d *DataDomain) DeleteAllStorageUnit() error {
 	output, err := d.cmd.Run("ddboost storage-unit show")
 	fmt.Println(d.prefix, output)
 	if err != nil {
@@ -88,7 +88,7 @@ func (d *DataDomain) DeleteAllStorageUnit() (error) {
 	return nil
 }
 
-func (d *DataDomain) DeleteOldestStorageUnit() (error) {
+func (d *DataDomain) DeleteOldestStorageUnit() error {
 	output, err := d.cmd.Run("ddboost storage-unit show")
 	fmt.Println(d.prefix, output)
 	if err != nil {
