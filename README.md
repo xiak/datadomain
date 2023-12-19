@@ -113,7 +113,7 @@ chmod a+x bin/ddcli
 
 ### Github build and release with a tag
 
-The repo will be built and released when you push a tag (format reg: '[0-9]+.[0-9]+.[0-9]+') to github.com
+The repo will be built and released automatically by github action when you push a tag (format reg: '[0-9]+.[0-9]+.[0-9]+') to github.com
 
 ```shell
 git tag -a 0.0.1 -m '0.0.1 release'
